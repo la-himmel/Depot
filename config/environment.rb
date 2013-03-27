@@ -3,3 +3,5 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
 Depot1::Application.initialize!
+
+config.logger = Logger.new(STDOUT)
