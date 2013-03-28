@@ -2,7 +2,7 @@
 
 #store #notice {
         color: #000;
-        border: 2px solid red;
+        border: 2px solid blue;
         padding: 1em;
         margin-bottom: 2em;
         background-color: #f0f0f0;
@@ -41,7 +41,7 @@
 }
 
 #product_list .list_description dt {
-	color:        #244;
+	color:        #249;
 	font-weight:  bold;
 	font-size:    larger;
 }
@@ -65,12 +65,12 @@
 }
 
 #banner {
-  background: #9c9;
+  background: #28c;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #239;
   text-align: center;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #columns {
-  background: #141;
+  background: #149;
 }
 
 #main {
@@ -95,7 +95,7 @@
   padding-left: 1em;
   padding-bottom: 1em;
   width: 16em;
-  background: #141;
+  background: #149;
 }
 
 #side a {
