@@ -66,7 +66,7 @@
 
 #banner {
   background: #28c;
-  padding-top: 10px;
+  margin-top: -5px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
@@ -76,10 +76,15 @@
 
 #banner img {
   float: left;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
 #columns {
-  background: #149;
+  //background: #149;  
 }
 
 #main {
@@ -93,13 +98,13 @@
   float: left;
   padding-top: 1em;
   padding-left: 1em;
-  padding-bottom: 1em;
   width: 16em;
-  background: #149;
+  margin-left: -100px;
+  color: #14f;
 }
 
 #side a {
-  color: #bfb;
+  color: #bbf;
   font-size: small;
 }
 
@@ -152,6 +157,7 @@
 
 #store .cart_title {
   font: 120% bold;
+  margin-left: 70px;
 }
 
 #store .item_price, #store .total_line {
@@ -160,16 +166,28 @@
 
 #store .total_line .total_cell {
   font-weight: bold;
-  border-top: 1px solid #595;
+  border-top: 1px solid #59f;
 }
 
 #cart, #cart table {
   font-size: smaller;
-  color: white;
+  color: #149;
 }
 
 #cart table {
-  border-top: 1px dotted #595;
-  border-bottom: 1px dotted #595;
+  border-top: 1px dotted #59f;
+  border-bottom: 1px dotted #59f;
+  border-left: 1px dotted #59f;
+  border-right: 1px dotted #59f;
   margin-bottom: 10px;
+  background: #dde;
+}
+
+#side .sleepy {
+  float: left;  
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  margin-left: -20px;  
+  width: 100%;  
 }
