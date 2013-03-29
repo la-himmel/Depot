@@ -191,3 +191,12 @@
   margin-left: -20px;  
   width: 100%;  
 }
+
+#rightfox img {
+  float: right;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: -1000px;
+  margin-left: 0px;
+}
