@@ -80,7 +80,7 @@ class LineItemsController < ApplicationController
   # DELETE /line_items/1
   # DELETE /line_items/1.json
   def destroy
-    logger.debug "destroy call"
+   #logger.debug "destroy call"
 
     @line_item = LineItem.find(params[:id])
     @line_item.destroy
