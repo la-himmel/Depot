@@ -3,7 +3,7 @@ require 'test_helper'
 class ProductTest < ActiveSupport::TestCase
 	fixtures :products
 
-  test "product attributes must not be empty"
+  test "product attributes must not be empty" do
     product = Product.new
     assert product.invalid?
     assert product.errors[:title].any?
@@ -12,22 +12,21 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
-  test "product price must be positive"
-   product = Product.new(:title => "My book title",
+  test "product price must be positive" do
+    product = Product.new(:title => "My book title",
                          :description => "Some description",
                          :image_url => "zzz.jpg")
-   product.price = -1;
-   assert product.invalid?
-   assert_equal "must be greater than or equal to 0.01",
-     product.errors[:price].join('; ')
+    product.price = -1;
+    assert product.invalid?
+    assert_equal "must be greater than or equal to 0.01", 
+      product.errors[:price].join('; ')
 
-   product.price = 0;
-   assert product.invalid?
-   assert_equal "must be greater than or equal to 0.01",
-     product.errors[:price].join('; ')
+    product.price = 0;
+    assert product.invalid?
+    assert_equal "must be greater than or equal to 0.01", product.errors[:price].join('; ')
 
-   product.price = 1
-   assert product.valid?
+    product.price = 1
+    assert product.valid?
   end
 
   def new_product(image_url)
@@ -47,9 +46,10 @@ class ProductTest < ActiveSupport::TestCase
 
   	bad.each do |name|
   	  assert new_product(name).invalid?, "#{name} shouldn't be valid"
+    end
   end
 
-  test "product is not valid without a unique title"
+  test "product is not valid without a unique title" do
     product = Product.new(:title => products(:ruby).title,
                           :description => "yyy",
                           :price => 1,
