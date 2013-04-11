@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Your Foxy Catalog</h1><h4><%= Time.now%></h4>
+<h1><%= t('.title_html') %></h1><h4><%= Time.now%></h4>
 <% if session[:counter].nil? %>
     <% session[:counter] = 1 %>
   <% else %>
@@ -19,7 +19,7 @@
     
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
-      <%= button_to 'Add to Cart', line_items_path(:product_id => product), :remote => true %>      
+      <%= button_to t('.add_html'), line_items_path(:product_id => product), :remote => true %>      
     </div>
     
   </div>  
